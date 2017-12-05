@@ -1,0 +1,6 @@
+[submodule "ansible-role-korora"]
+	path = roles/ansible-role-korora
+	url = https://github.com/csmart/ansible-role-korora.git
+[submodule "roles/ansible-role-korora"]
+	path = roles/ansible-role-korora
+	url = https://github.com/csmart/ansible-role-korora.git

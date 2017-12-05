@@ -1,0 +1,4 @@
+*.retry
+/inventory/hosts-custom
+/inventory/hosts-custom.yml
+/inventory/hosts-custom.yaml

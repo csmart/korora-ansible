@@ -1,0 +1,18 @@
+---
+# Master playbook for initial configuration of Ansible
+#
+# This ensures the Ansible Management user exists with
+# the relevant key, specified in the vault of the role.
+#
+# The inventory has an entry for localhost so that the
+# host can be configured without needing SSH:
+#
+# localhost ansible_connection=local
+#
+# Can be run like:
+# ansible-playbook --ask-vault-pass ansible-host.yml
+#
+- hosts: localhost
+  gather_facts: yes
+  roles:
+    - ansible-role-korora

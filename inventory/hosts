@@ -1,0 +1,9 @@
+[all]
+# Example with additional variables:
+#localhost ansible_connection=local korora_packages_custom='{ "install": [ "nano" ], "remove": [ "nano" ] }'
+
+# localhost doesn't require ssh
+localhost ansible_connection=local
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
