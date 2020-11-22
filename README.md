@@ -24,7 +24,7 @@ It will do things like:
 
 Currently this requires:
 
-* Fedora Workstation 28 or later
+* Fedora 32 or later (Workstation and base cloud image are both supported)
 * Active Internet connection
 * User with sudo privileges
 * SSH access to remote hosts if not running against localhost
@@ -35,6 +35,11 @@ Note that Git is installed by default in Fedora Workstation and simply running
 the `ansible-playbook` command should prompt to install Ansible. So technically
 you shouldn't need to manually install these packages, but they are
 dependencies.
+
+Note if you run into an error with systemd on Fedora 32 where "Service is in
+unknown state" then please ensure you update systemd to >= 245.7. See here for
+details:
+https://github.com/ansible/ansible/issues/71528
 
 # Getting the code
 
